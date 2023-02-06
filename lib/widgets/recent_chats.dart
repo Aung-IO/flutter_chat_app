@@ -28,6 +28,13 @@ class RecentChat extends StatelessWidget {
                 return Container(
                   margin: EdgeInsets.only(top: 5, bottom: 5, right: 10),
                   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: chat.unread ? Color(0xFFFFEFEE) : Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20),
+                      bottomRight: Radius.circular(20),
+                    ),
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -35,11 +42,11 @@ class RecentChat extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           CircleAvatar(
-                            radius: 35,
+                            radius: 30,
                             backgroundImage: AssetImage(chat.sender.imgUrl),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 15,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -73,8 +80,34 @@ class RecentChat extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Text(chat.time),
-                          Text('unread'),
+                          Text(
+                            chat.time,
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 95, 93, 93),
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          chat.unread
+                              ? Container(
+                                  width: 40,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    color: Color.fromARGB(255, 239, 68, 45),
+                                    borderRadius: BorderRadius.circular(30),
+                                  ),
+                                  alignment: Alignment.center,
+                                  child: Text(
+                                    'new',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                )
+                              : SizedBox.shrink(),
                         ],
                       )
                     ],
