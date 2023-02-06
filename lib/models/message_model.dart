@@ -28,27 +28,27 @@ final User currentUser = User(
 final User greg = User(
   id: 1,
   name: 'Chaw Ki',
-  imgUrl: 'assets/images/girl1.jpg',
+  imgUrl: 'assets/images/maNayChi1.jpg',
 );
 final User james = User(
   id: 2,
-  name: 'Noe',
-  imgUrl: 'assets/images/girl2.jpg',
+  name: 'Ma Ma Nay Chi',
+  imgUrl: 'assets/images/maNayChi1.jpg',
 );
 final User john = User(
   id: 3,
-  name: 'Khaing',
-  imgUrl: 'assets/images/girl3.jpg',
+  name: 'Ma Nay Chi',
+  imgUrl: 'assets/images/maNayChi1.jpg',
 );
 final User olivia = User(
   id: 4,
-  name: 'Olivia',
-  imgUrl: 'assets/images/girl4.jpg',
+  name: 'Chi Chi',
+  imgUrl: 'assets/images/maNayChi1.jpg',
 );
 final User sam = User(
   id: 5,
-  name: 'Sam',
-  imgUrl: 'assets/images/girl5.jpg',
+  name: 'Chi',
+  imgUrl: 'assets/images/maNayChi1.jpg',
 );
 
 // FAVORITE CONTACTS
@@ -58,15 +58,15 @@ List<User> favorites = [james, john, greg, olivia, sam];
 List<Message> chats = [
   Message(
     sender: james,
-    time: '5:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    time: '12:16 AM',
+    text: 'ချစ်နာလား ငါကို',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: olivia,
     time: '4:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'ဟယ် ဘယ်ကသာ',
     isLiked: false,
     unread: true,
   ),
