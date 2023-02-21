@@ -27,28 +27,28 @@ final User currentUser = User(
 // USERS
 final User greg = User(
   id: 1,
-  name: 'Chaw Ki',
-  imgUrl: 'assets/images/maNayChi1.jpg',
+  name: 'Mia',
+  imgUrl: 'assets/images/girl1.jpg',
 );
 final User james = User(
   id: 2,
-  name: 'Ma Ma Nay Chi',
-  imgUrl: 'assets/images/maNayChi1.jpg',
+  name: 'Nay',
+  imgUrl: 'assets/images/girl2.jpg',
 );
 final User john = User(
   id: 3,
-  name: 'Ma Nay Chi',
-  imgUrl: 'assets/images/maNayChi1.jpg',
+  name: 'SUS',
+  imgUrl: 'assets/images/girl3.jpg',
 );
 final User olivia = User(
   id: 4,
-  name: 'Chi Chi',
-  imgUrl: 'assets/images/maNayChi1.jpg',
+  name: 'sheeva',
+  imgUrl: 'assets/images/girl4.jpg',
 );
 final User sam = User(
   id: 5,
-  name: 'Chi',
-  imgUrl: 'assets/images/maNayChi1.jpg',
+  name: 'Ephe',
+  imgUrl: 'assets/images/girl5.jpg',
 );
 
 // FAVORITE CONTACTS

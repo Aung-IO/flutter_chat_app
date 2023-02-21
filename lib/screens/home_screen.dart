@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 // ignore: deprecated_member_use
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).colorScheme.secondary,
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30)),

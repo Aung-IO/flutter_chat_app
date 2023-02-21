@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.blue,
-        // ignore: deprecated_member_use
-        accentColor: Color.fromARGB(255, 246, 244, 237),
+        colorScheme: ColorScheme.fromSwatch()
+            .copyWith(secondary: Color.fromARGB(255, 246, 244, 237)),
       ),
       home: HomeScreen(),
     );
